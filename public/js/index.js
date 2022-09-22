@@ -4,8 +4,27 @@ if(window.ethereum){
         try{
         const accounts = await ethereum.request({method:'eth_requestAccounts'});
         account = accounts[0];
-        document.querySelector('span').innerHTML = account;
-        window.open('tela.html')
+        class Account {
+            constructor (account) {
+                this.account = account;
+            }
+            toString() {
+                return this.account
+            }
+        }
+        
+        const accountConverter = {
+            toFirestore: (account) => {
+                return {
+                    account: account.account,
+                    };
+            },
+            fromFirestore: (snapshot, options) => {
+                const data = snapshot.data(options);
+                return new Account(data.account);
+            }
+        };        
+        window.location.href = './tela.html'
     } catch(e){}
     })
 }

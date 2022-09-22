@@ -32,6 +32,12 @@ button{
     transition: background 500ms ease-in-out;
 }
 
+img#img-login{
+    margin-bottom: -7px;
+    height: 30px;
+    width: 30px;
+}
+
 button:hover{
     background-position: 0;
 }

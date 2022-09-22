@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat';
+}
+
+#title{
+    font-size: 45px;
+}
+#procurarFilme{
+    font-weight: 600;
+    padding: 15px 35px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#center{
+    margin-top: 100px;
+    text-align: center;
+}
+
+h2{
+    font-weight: 600;
+}
+
+h4{
+    font-weight: 400;
+}
+
+#areaInfo{
+    margin-left: auto;
+    margin-right: 33%;
+}
+
+#areaImg{
+    margin-left: 35%;
+    margin-right: auto;
+}
+
+#areaFilme{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+#filmeImg{
+    height: 250px;
+}
+
