@@ -8,24 +8,46 @@
 
 body{
     font-family: 'Montserrat';
+    background: linear-gradient(45deg, #000 0%, #08204e 52%, #102d71 100%);
+    display: block;
+    align-items: center;
+    text-align: center;
+    min-height: 84vh;
+
 }
 
 #title{
+    margin-top: 100px;
     font-size: 45px;
+    color: white;
 }
+
 #procurarFilme{
-    font-weight: 600;
-    padding: 15px 35px;
-    font-size: 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px;
     margin-top: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    height: 60px;
+    width: 250px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 7px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-image: -webkit-linear-gradient(45deg, #102d71 0%, #000000 52%, #102d71 100%);
+    background-image: linear-gradient(45deg, #b95614 0%, #000000 52%, #102d71 100%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 500ms ease-in-out;
+    margin-bottom: 20px;
+}
+
+#procurarFilme:hover{
+    background-position: 0;
 }
 
 #center{
-    margin-top: 100px;
     text-align: center;
 }
 
@@ -35,6 +57,10 @@ h2{
 
 h4{
     font-weight: 400;
+}
+
+img{
+    border-radius: 7px;
 }
 
 #areaInfo{
@@ -47,12 +73,18 @@ h4{
     margin-right: auto;
 }
 
+span{
+    margin-bottom: -350px;
+    color: white;
+}
+
 #areaFilme{
     margin-top: 35px;
-    display: flex;
+    display: block;
     align-items: center;
     text-align: center;
     display: none;
+    color: white;
 }
 
 #filmeImg{
