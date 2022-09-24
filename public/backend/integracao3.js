@@ -28,7 +28,7 @@
      
      let htmlthought = `<div class="alert alert-outline-primary">
                ${data[index].text}<br>
-               <span style="color:#00ffc5;">
+               <span style="color:gray;">
                    ${data[index].author}
                </span>
            </div>`;
