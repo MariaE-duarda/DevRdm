@@ -8,12 +8,28 @@
 }
 
 body{
-    background: linear-gradient(45deg, #000 0%, #08204e 52%, #102d71 100%);
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(-45deg, #8f38a9, #5d4691, #553fd4, #3079b4);
+    background-size: 400% 400%;
     display: flex;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    animation: backgroundTransition 4s ease-out infinite;
+    position: relative;
+}
+
+@keyframes backgroundTransition {
+    0% {
+        background-position:  0% 80%;
+    }
+    50% {
+        background-position: 80% 100%;
+    }
+    100% {
+        background-position: 0% 90%;
+    }
 }
 
 div{
@@ -22,26 +38,85 @@ div{
     margin-top: 18%;
 }
 
-#title{
-    margin-top: -230px;
-    font-size: 50px;
+.logo{
+    margin-top: -40px;
+    width: 150px;
+}
+
+hr{
+    width: 50%;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    border-color: rgba(255, 255, 255, 0.603);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#email{
+    margin-top: 20px;
+}
+
+.square{
+    height: 400px;
+    width: 30%;
+    background-color: #1642755b;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.336);
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: transition 4s ease-out infinite;
+}
+
+@keyframes transition {
+    0% {
+        rotate: 2deg;
+        background-position:  0% 80%;
+    }
+    50% {
+        rotate: -1deg;
+        background-position: 80% 100%;
+    }
+    100% {
+        rotate: 2deg;
+        background-position: 0% 90%;
+    }
+}
+
+span{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+input{
+    width: 80%;
+    height: 33px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    margin-top: 7px;
+    background-color: rgba(7, 10, 27, 0.651);
+}
+
+label{
     color: white;
 }
 
 button{
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight: 500;
-    font-size: 25px;
-    height: 60px;
-    width: 250px;
-    box-shadow: 5px 5px 5px black;
+    height: 40px;
+    width: 80%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.356);
     border-radius: 7px;
     background-color: transparent;
     cursor: pointer;
     border: none;
     color: white;
     background-image: -webkit-linear-gradient(45deg, #102d71 0%, #000000 52%, #102d71 100%);
-    background-image: linear-gradient(45deg, #b95614 0%, #000000 52%, #102d71 100%);
+    background-image: linear-gradient(45deg, #862c73 0%, #000000 52%, #102d71 100%);
     background-position: 100%;
     background-size: 400%;
     -webkit-transition: background 300ms ease-in-out;
@@ -61,4 +136,8 @@ p{
     font-weight: 400;
     font-size: 21px;
     margin-top: 15px;
+}
+
+#login{
+    margin-bottom: 10px;
 }
