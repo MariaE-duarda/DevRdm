@@ -14,15 +14,20 @@
         <span> <b>Bem vindo(a)</b> de volta!</span> <br>
         <input type="text" id="email" placeholder="E-mail"> <br>
         <input type="password" id="senha" placeholder="Senha"> <br>
-        <button id="login">LogIn</button> <br>
+        <button onclick="loginEmailSenha()" id="login">LogIn</button> <br>
         <label>OU</label> <br>
         <div class="buttonDiv" id="buttonDiv"><label for="">Google</label></div> 
-        <button><img id='img-login' src="img/metamask.png" alt=""> MetaMask</button>
+        <button class="metameskLogin"><img id='img-login' src="img/metamask.png" alt=""> MetaMask</button>
       </div>
     </form>
 
     <script src="js/index.js"></script>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script>
+        function loginEmailSenha(){
+          window.open('telaMenu.html', '_self')
+      }
+    </script>
     <script>
       function handleCredentialResponse(response) {
       }
