@@ -9,5 +9,4 @@ if(window.ethereum){
     })
 }
 else{
-    alert('Não pode interagir com o nosso website...')
 }
