@@ -16,11 +16,29 @@
         <input type="password" id="senha" placeholder="Senha"> <br>
         <button id="login">LogIn</button> <br>
         <label>OU</label> <br>
+        <div class="buttonDiv" id="buttonDiv"><label for="">Google</label></div> 
         <button><img id='img-login' src="img/metamask.png" alt=""> MetaMask</button>
       </div>
     </form>
 
     <script src="js/index.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script>
+      function handleCredentialResponse(response) {
+      }
+      
+      window.onload = function () {
+        google.accounts.id.initialize({
+          client_id: "",
+          callback: handleCredentialResponse
+        });
+        google.accounts.id.renderButton(
+          document.getElementById("buttonDiv"),
+          { theme: "inline", size: "large"}  // customization attributes
+        );
+        google.accounts.id.prompt(); // also display the One Tap dialog
+      }
+  </script>
 
   </body>
 </html>
