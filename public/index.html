@@ -5,26 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Random Filmes</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="img/shuffle.png" type="image/x-icon">
   </head>
   <body>
-    <form class="square">
+    <div class="square">
       <div>
         <img class="logo" src="img/RandomDev.png" alt="Logo"> <br>
         <hr>
         <span> <b>Bem vindo(a)</b> de volta!</span> <br>
         <input type="text" id="email" placeholder="E-mail"> <br>
         <input type="password" id="senha" placeholder="Senha"> <br>
-        <button id="login">LogIn</button> <br>
+        <button id="login" onclick="login()">LogIn</button> <br>
         <label>OU</label> <br>
         <div class="buttonDiv" id="buttonDiv"><label for="">Google</label></div> 
         <button class="metameskLogin"><img id='img-login' src="img/metamask.png" alt=""> MetaMask</button>
       </div>
-    </form>
+    </div>
 
     <script src="js/index.js"></script>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 
     <script>
+      function login(){
+        email = document.getElementById('email').value;
+        senha = document.getElementById('senha').value;
+
+        if(email != "" || senha != ""){
+          window.location.href = 'telaMenu.html'
+        }
+      }
       function handleCredentialResponse(response) {
       }
       
