@@ -35,7 +35,7 @@ body{
 div{
     align-items: center;
     text-align: center;
-    margin-top: 18%;
+    margin-top: 65px;
 }
 
 .logo{
@@ -100,6 +100,11 @@ input{
     background-color: rgba(7, 10, 27, 0.651);
 }
 
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    }
+
 label{
     color: white;
 }
@@ -124,7 +129,7 @@ button{
 }
 
 img#img-login{
-    margin-bottom: -7px;
+    margin-bottom: -13px;
     height: 30px;
     width: 30px;
 }
@@ -140,4 +145,10 @@ p{
 
 #login{
     margin-bottom: 10px;
+}
+
+@media(max-width: 1000px) {
+    .square{
+        width: 70%;
+    }
 }
