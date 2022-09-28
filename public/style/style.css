@@ -162,7 +162,7 @@ p{
     }
 }
 
-@media(max-width: 400px){
+@media(max-width: 450px){
     .square{
         width: 90%;
     }
