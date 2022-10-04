@@ -1,0 +1,128 @@
+body{
+    height: 80vh;
+    background: linear-gradient(-45deg, #a938a3, #734691, #d43faf, #6e30b4);
+    background-size: 400% 400%;
+    align-items: center;
+    animation: backgroundTransition 6s ease-out infinite;
+}
+
+@keyframes backgroundTransition {
+    0% {
+        background-position:  0% 80%;
+    }
+    50% {
+        background-position: 80% 100%;
+    }
+    100% {
+        background-position: 0% 90%;
+    }
+}
+
+.aspas{
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.squareCitacao{
+    background-color: white;
+    height: 300px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    border-radius: 10px;
+    border: 1px solid rgb(173, 173, 173);
+    font-size: 30px;
+}
+
+#thought{
+    padding-left: 40px;
+    padding-right: 20px;
+    margin-top: -55px;
+}
+
+hr{
+    margin-top: 20px;
+}
+
+.heart{
+    margin-top: -50px;
+    margin-left: 22%;
+}
+
+.subtext{
+    margin-top: -100px;
+}
+
+.coracao{
+    width: 35px;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+    box-shadow: 3px 0px 5px 5px rgba(0, 0, 0, 0.336);
+    background: linear-gradient(-45deg, #a938a3 0%, #8f57b4 100%);
+    margin-left: 42%;
+}
+
+@media(max-width: 1000px){
+    #thought{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 900px){
+    button{
+        margin-left: 38%;
+    }
+}
+
+@media(max-width: 730px){
+    #thought{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 630px){
+    button{
+        margin-left: 34%;
+    }
+    .squareCitacao{
+        width: 70%;
+    }
+}
+
+@media(max-width: 530px){
+    button{
+        margin-left: 30%;
+    }
+    #thought{
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 470px){
+    .squareCitacao{
+        width: 85%;
+    }
+    button{
+        margin-left: 25%;
+    }
+    #thought{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 400px){
+    button{
+        margin-left: 20%;
+    }
+}
