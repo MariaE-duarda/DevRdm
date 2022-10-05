@@ -18,6 +18,22 @@ body{
     }
 }
 
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background-color: #773292;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 3%;
+}
+
 .aspas{
     width: 40px;
     margin-left: 10px;
@@ -103,6 +119,7 @@ button{
 @media(max-width: 530px){
     button{
         margin-left: 30%;
+        margin-top: 30px;
     }
     #thought{
         font-size: 17px;

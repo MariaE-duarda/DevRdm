@@ -1,9 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: monospace;
+    font-family: 'Poppins';
   }
+
+body{
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(-45deg, #8f38a9, #5d4691, #553fd4, #3053b4);
+  background-size: 400% 400%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: backgroundTransition 4s ease-out infinite;
+  position: relative;
+}
+
+@keyframes backgroundTransition {
+  0% {
+      background-position:  0% 80%;
+  }
+  50% {
+      background-position: 80% 100%;
+  }
+  100% {
+      background-position: 0% 90%;
+  }
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background-color: #5a4d9b;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+  height: 35px;
+  margin-top: 15px;
+  margin-left: 3%;
+}
   
   textarea::-webkit-scrollbar {
     width: 12px;
@@ -18,6 +61,11 @@
   p {
     color: white;
     font-size: 3rem;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -1px;
+    font-weight: 600;
+    margin-top: 45px;
   }
   
   .speech{
@@ -27,24 +75,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: blueviolet;
   }
   
   #textarea {
-    width: 80%;
+    width: 70%;
     height: 40%;
     margin: 50px auto;
     padding: 1rem;
     border: none;
     outline: 0;
     text-align: justify;
+    border-radius: 15px;
+
   }
   
   .fas {
-    font-weight: 600;
-    font-size: 3rem;
+    font-weight: 400;
+    font-size: 2rem;
     color: black;
-    min-width: 4rem;
+    min-width: 2.5rem;
   }
   
   button { 
@@ -60,10 +109,10 @@
   
   @media(max-width: 700px) {
     p {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     
     .fas {
-      min-width: 3rem;
+      min-width: 2rem;
     }
   }

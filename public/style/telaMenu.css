@@ -132,6 +132,9 @@ div.buttons{
     width: 50%;
     margin-left: 25%;
   }
+  body{
+    height: 220vh;
+  }
 }
 
 @media(max-width: 600px){
@@ -149,5 +152,8 @@ div.buttons{
         margin-left: 5%;
         height: 150px;
         width: 90%;
+    }
+    body{
+      height: 170vh;
     }
 }
