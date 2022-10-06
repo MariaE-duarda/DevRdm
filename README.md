@@ -1,2 +1,3 @@
-# w3b3
- 🌐 Projeto introdutório de web 3.0
+#Projeto de web 
+<hr>
+Um projeto.
