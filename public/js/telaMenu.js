@@ -42,3 +42,16 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
+
+
+let corMod = 0
+function trocarCor(){
+  if (corMod == 0){
+    corMod = 1
+    document.getElementById('menuInfos').style.display = 'block';
+
+  } else{
+    corMod = 0
+    document.getElementById('menuInfos').style.display = 'none';
+  }
+} 

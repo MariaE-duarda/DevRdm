@@ -8,22 +8,33 @@
     <link rel="stylesheet" href="style/telaMenu.css">
     <link rel="shortcut icon" href="img/shuffle.png" type="image/x-icon">
 </head>
-<body>
+<body id="body">
     <header>
         <div id="menu">
             <img class="list-img" src="img/list.png" alt="">
-            <img src="img/RandomDev.png" alt="">
+            <img class="image" src="img/RandomDev.png" alt="">
+            
+            <button onclick="trocarCor()" id="normal" class="normal">Informações</button>
+
+            <div class="menu" id="menuInfos">
+                <ul>
+                    <li class="marBot"><a href="#">Autores</a></li>
+                    <li class="marTop"><a href="#">Função do site</a></li>
+                    <hr>
+                    <span>Site criado com <3 por Eduarda </span>
+                </ul>
+            </div>
         </div>
     </header>
-    <h1 class="title">Random Opções</h1>
+    <h1 class="title" id="title">Random Opções</h1>
     <div class="buttons">
-       <a href="citarFamoso.html"><button class="randomCitacao"><img class="img-button" src="img/Citações.png" alt=""><br> Citações</button></a> 
-       <a href="tradutorVoz.html"><button class="tradutor"><img src="img/Tradutor.png" class="img-button" alt=""><br>Tradutor de voz</button></a>
-       <a href="github.html"><button class="gitHub"><img src="img/GitHub.png" class="img-button" alt=""><br>Perfil GitHub</button></a>
+       <a href="citarFamoso.html"><button class="randomCitacao button-option"><img class="img-button" src="img/Citações.png" alt=""><br> Citações</button></a> 
+       <a href="tradutorVoz.html"><button class="tradutor button-option"><img src="img/Tradutor.png" class="img-button" alt=""><br>Tradutor de voz</button></a>
+       <a href="github.html"><button class="gitHub button-option"><img src="img/GitHub.png" class="img-button" alt=""><br>Perfil GitHub</button></a>
     </div>
     <div class="buttons">
-        <a href="qrcode.html"><button class="qrcode"><img src="img/Qr-Code.png" class="img-button" alt=""><br> Criar QRcode</button></a>
-        <a href="sorteioNúmero.html"><button class="randomNumero"><img src="img/Números.png" alt="" class="img-button"><br> Número</button></a>
+        <a href="qrcode.html"><button class="qrcode button-option"><img src="img/Qr-Code.png" class="img-button" alt=""><br> Criar QRcode</button></a>
+        <a href="sorteioNúmero.html"><button class="randomNumero button-option"><img src="img/Números.png" alt="" class="img-button"><br> Número</button></a>
     </div>
 
     <script src="js/telaMenu.js"></script>
