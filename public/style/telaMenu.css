@@ -5,7 +5,7 @@
     font-weight: 600;
 }
 body{
-    height: 170vh;
+    height: 130vh;
     background: linear-gradient(-45deg, #8f38a9, #5d4691, #553fd4, #3079b4);
     background-size: 400% 400%;
     align-items: center;
@@ -63,11 +63,33 @@ body{
     }
   }
 
+.cancelar{
+  cursor: pointer;
+  height: 35px;
+  margin-top: -25px;
+  margin-left: 45px;
+}
 
+.modal{
+  position: fixed;
+  height: 200px;
+  width: 500px;
+  background-color: #6a42ac;
+  text-align: center;
+  margin-left: 33%;
+  border-radius: 10px;
+  margin-top: 180px;
+  color: white;
+  pointer-events: auto;
+}
+
+#modal{
+  display: none;
+}
 
 
 #menu {
-    position: fixed;
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;

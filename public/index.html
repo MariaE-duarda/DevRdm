@@ -13,8 +13,8 @@
         <img class="logo" src="img/RandomDev.png" alt="Logo"> <br>
         <hr>
         <span> <b>Bem vindo(a)</b> de volta!</span> <br>
-        <input type="text" id="email" placeholder="E-mail"> <br>
-        <input type="password" id="senha" placeholder="Senha"> <br>
+        <input type="text" id="email" placeholder="E-mail" required> <br>
+        <input type="password" id="senha" placeholder="Senha" required> <br>
         <button id="login" onclick="login()">LogIn</button> <br>
         <label>OU</label> <br>
         <div class="buttonDiv" id="buttonDiv"><label for="">Google</label></div> 
@@ -35,6 +35,7 @@
         }
       }
       function handleCredentialResponse(response) {
+        
       }
       
       window.onload = function () {

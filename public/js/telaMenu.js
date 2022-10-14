@@ -55,3 +55,12 @@ function trocarCor(){
     document.getElementById('menuInfos').style.display = 'none';
   }
 } 
+
+function infoFunction(){
+  document.getElementById('menuInfos').style.display = 'none';
+  document.getElementById('modal').style.display = 'block'
+}
+
+function closeModal(){
+  document.getElementById('modal').style.display = 'none';
+}

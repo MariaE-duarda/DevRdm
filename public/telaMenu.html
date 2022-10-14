@@ -8,24 +8,28 @@
     <link rel="stylesheet" href="style/telaMenu.css">
     <link rel="shortcut icon" href="img/shuffle.png" type="image/x-icon">
 </head>
-<body id="body">
+<body id="body" onclick="">
     <header>
         <div id="menu">
             <img class="list-img" src="img/list.png" alt="">
             <img class="image" src="img/RandomDev.png" alt="">
-            
+
             <button onclick="trocarCor()" id="normal" class="normal">Informações</button>
 
             <div class="menu" id="menuInfos">
                 <ul>
                     <li class="marBot"><a href="#">Autores</a></li>
-                    <li class="marTop"><a href="#">Função do site</a></li>
+                    <li class="marTop"><a onclick="infoFunction()" href="#">Função do site</a></li>
                     <hr>
-                    <span>Site criado com <3 por Eduarda </span>
+                    <span style="color: red;">Site criado com <3 por Eduarda </span>
                 </ul>
             </div>
         </div>
     </header>
+    <div class="modal" id="modal">
+        <h3>Função do site:<img class="cancelar" onclick="closeModal()" src="img/cancelar.png" alt=""></h3> 
+        <span>Este site é um projeto da matéria de desenvolvimento de aplicações web. <br> Tendo como foco o front-end.</span>
+    </div>
     <h1 class="title" id="title">Random Opções</h1>
     <div class="buttons">
        <a href="citarFamoso.html"><button class="randomCitacao button-option"><img class="img-button" src="img/Citações.png" alt=""><br> Citações</button></a> 
