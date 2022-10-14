@@ -63,7 +63,7 @@ body{
     }
   }
 
-.buttons {
+.button-option {
     animation-duration: 2s;
     animation-name: slidein;
   }
