@@ -88,9 +88,8 @@ body{
 }
 
 #modal{
-  display: block;
+  display: none;
 }
-
 
 #menu {
     position: fixed; 
