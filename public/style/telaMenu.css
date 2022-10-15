@@ -87,6 +87,34 @@ body{
   pointer-events: auto;
 }
 
+.forTrocarCor{
+  margin-top: -110px;
+  margin-left: 45px;
+  cursor: pointer;
+}
+
+.trocarCor{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-color: #6e48ac;
+  box-shadow: 5px 0px 15px inset black, 5px 0px 5px rgba(0, 0, 0, 0.493);
+  margin-top: -20px;
+}
+
+.div-img-trocarCor{
+  margin-top: -10px;
+  margin-right: 45px;
+  cursor: pointer;
+}
+
+.img-trocarCor{
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
 #modal{
   display: none;
 }
@@ -184,7 +212,7 @@ img{
   border: none;
   height: 200px;
   font-size: 25px;
-  margin-top: 20px;
+  margin-top: 120px;
   margin-left: 2%;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.336);
   color: white;
@@ -195,6 +223,10 @@ img{
   border-top-left-radius: 20px;
   border-bottom-right-radius: 50px;
   transition: .4s;
+}
+
+.button-option2{
+  margin-top: 35px;
 }
 
 .button-option:hover{
@@ -241,7 +273,13 @@ div.buttons{
     margin-left: 25%;
   }
   body{
-    height: 220vh;
+    height: 250vh;
+  }
+  .button-option{
+    margin-bottom: -80px;
+  }
+  .button-option2{
+    margin-top: 120px;
   }
   .modal{
     margin-left: 15%;
@@ -251,6 +289,10 @@ div.buttons{
 @media(max-width: 690px){
   .normal{
     margin-left: 40%;
+  }
+  .button-option{
+    width: 80%;
+    margin-left: 10%;
   }
   .menu{
     margin-left: 43%;
@@ -307,9 +349,17 @@ div.buttons{
         margin-left: 5%;
         height: 150px;
         width: 90%;
+        margin-top: 85px;
+    }
+    .button-option2{
+      margin-top: 85px;
     }
     body{
       height: 170vh;
+    }
+    .forTrocarCor{
+      margin-top: -50px;
+      margin-left: 25px;
     }
 }
 

@@ -13,7 +13,7 @@
         <div id="menu">
             <img class="list-img" src="img/list.png" alt="">
             <img class="image" src="img/RandomDev.png" alt="">
-            <button onclick="trocarCor()" id="normal" class="normal">Informações</button>
+            <button onclick="openOptions()" id="normal" class="normal">Informações</button>
             <div class="menu" id="menuInfos">
                 <ul>
                     <li class="marBot"><a href="#">Autores</a></li>
@@ -31,14 +31,20 @@
         </div>
     </div>
     <h1 class="title" id="title">Random Opções</h1>
-    <div class="buttons">
-       <a href="citarFamoso.html"><button class="randomCitacao button-option"><img class="img-button" src="img/Citações.png" alt=""><br> Citações</button></a> 
-       <a href="tradutorVoz.html"><button class="tradutor button-option"><img src="img/Tradutor.png" class="img-button" alt=""><br>Tradutor de voz</button></a>
-       <a href="github.html"><button class="gitHub button-option"><img src="img/GitHub.png" class="img-button" alt=""><br>Perfil GitHub</button></a>
+    <div class="forTrocarCor">
+        <button class="trocarCor" id="trocarCor">
+        <div class="div-img-trocarCor">
+            <img class="img-trocarCor" src="img/sol.png" onclick="trocarCor()" alt=""></button>
+        </div>
     </div>
     <div class="buttons">
-        <a href="qrcode.html"><button class="qrcode button-option"><img src="img/Qr-Code.png" class="img-button" alt=""><br> Criar QRcode</button></a>
-        <a href="sorteioNúmero.html"><button class="randomNumero button-option"><img src="img/Números.png" alt="" class="img-button"><br>Sortear Número</button></a>
+       <a href="citarFamoso.html"><button id="button-option1" class="randomCitacao button-option"><img class="img-button" src="img/Citações.png" alt=""><br> Citações</button></a> 
+       <a href="tradutorVoz.html"><button id="button-option2" class="tradutor button-option"><img src="img/Tradutor.png" class="img-button" alt=""><br>Tradutor de voz</button></a>
+       <a href="github.html"><button id="button-option3" class="gitHub button-option"><img src="img/GitHub.png" class="img-button" alt=""><br>Perfil GitHub</button></a>
+    </div>
+    <div class="buttons">
+        <a href="qrcode.html"><button id="button-option4" class="qrcode button-option button-option2"><img src="img/Qr-Code.png" class="img-button" alt=""><br> Criar QRcode</button></a>
+        <a href="sorteioNúmero.html"><button id="button-option5" class="randomNumero button-option button-option2"><img src="img/Números.png" alt="" class="img-button"><br>Sortear Número</button></a>
     </div>
 
     <script src="js/telaMenu.js"></script>
