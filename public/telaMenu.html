@@ -13,9 +13,7 @@
         <div id="menu">
             <img class="list-img" src="img/list.png" alt="">
             <img class="image" src="img/RandomDev.png" alt="">
-
             <button onclick="trocarCor()" id="normal" class="normal">Informações</button>
-
             <div class="menu" id="menuInfos">
                 <ul>
                     <li class="marBot"><a href="#">Autores</a></li>
@@ -27,8 +25,10 @@
         </div>
     </header>
     <div class="modal" id="modal">
-        <h3>Função do site:<img class="cancelar" onclick="closeModal()" src="img/cancelar.png" alt=""></h3> 
-        <span>Este site é um projeto da matéria de desenvolvimento de aplicações web. <br> Tendo como foco o front-end.</span>
+        <div class="center">
+            <h3>Função do site:<img class="cancelar" onclick="closeModal()" src="img/cancelar.png" alt=""></h3> 
+            <span>Este site é um projeto da matéria de desenvolvimento de aplicações web. <br> Tendo como foco o front-end.</span>
+        </div>
     </div>
     <h1 class="title" id="title">Random Opções</h1>
     <div class="buttons">
@@ -38,7 +38,7 @@
     </div>
     <div class="buttons">
         <a href="qrcode.html"><button class="qrcode button-option"><img src="img/Qr-Code.png" class="img-button" alt=""><br> Criar QRcode</button></a>
-        <a href="sorteioNúmero.html"><button class="randomNumero button-option"><img src="img/Números.png" alt="" class="img-button"><br> Número</button></a>
+        <a href="sorteioNúmero.html"><button class="randomNumero button-option"><img src="img/Números.png" alt="" class="img-button"><br>Sortear Número</button></a>
     </div>
 
     <script src="js/telaMenu.js"></script>

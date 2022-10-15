@@ -9,7 +9,7 @@ body{
     background: linear-gradient(-45deg, #8f38a9, #5d4691, #553fd4, #3079b4);
     background-size: 400% 400%;
     align-items: center;
-    animation: backgroundTransition 6s ease-out infinite;
+    animation: backgroundTransition 10s ease-out infinite;
     margin-left: auto;
     margin-right: auto;
 }
@@ -46,6 +46,7 @@ body{
       blink 1000ms steps(13) infinite normal;
     border-right: 5px solid white;
   }
+
   @keyframes typewriter {
     from {
       width: 0%;
@@ -71,12 +72,15 @@ body{
 }
 
 .modal{
+  margin-left: 25%;
+}
+
+.center{
   position: fixed;
   height: 200px;
   width: 500px;
-  background-color: #6a42ac;
+  background-color: #9268d6ea;
   text-align: center;
-  margin-left: 33%;
   border-radius: 10px;
   margin-top: 180px;
   color: white;
@@ -84,7 +88,7 @@ body{
 }
 
 #modal{
-  display: none;
+  display: block;
 }
 
 
@@ -191,6 +195,7 @@ img{
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.336);
   border-top-left-radius: 20px;
   border-bottom-right-radius: 50px;
+  transition: .4s;
 }
 
 .button-option:hover{
@@ -213,6 +218,9 @@ div.buttons{
   .menu{
     margin-left: 63%;
   }
+  .modal{
+    margin-left: 25%;
+  }
 }
 
 @media(max-width: 870px){
@@ -221,6 +229,9 @@ div.buttons{
   }
   .menu{
     margin-left: 53%;
+  }
+  .modal{
+    margin-left: 16%;
   }
 }
 
@@ -233,6 +244,9 @@ div.buttons{
   body{
     height: 220vh;
   }
+  .modal{
+    margin-left: 15%;
+  }
 }
 
 @media(max-width: 690px){
@@ -241,6 +255,9 @@ div.buttons{
   }
   .menu{
     margin-left: 43%;
+  }
+  .modal{
+    margin-left: 9%;
   }
 }
 
@@ -251,12 +268,26 @@ div.buttons{
   .menu{
     margin-left: 33%;
   }
+  .modal{
+    margin-left: 2%;
+  }
 }
 
 @media(max-width: 600px){
   .button-option{
     width: 70%;
     margin-left: 15%;
+  }
+
+}
+
+@media(max-width: 530px){
+  .center{
+    width: 80%;
+    height: 170px;
+  }
+  .modal{
+    margin-left: 10%;
   }
 }
 
@@ -291,3 +322,4 @@ div.buttons{
     margin-left: 17%;
   }
 }
+
