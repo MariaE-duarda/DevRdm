@@ -17,13 +17,15 @@
         <input type="password" id="senha" placeholder="Senha" required> <br>
         <button id="login" onclick="login()">LogIn</button> <br>
         <label>OU</label> <br>
-        <div class="buttonDiv" id="buttonDiv"><label for="">Google</label></div> 
+        <div class="buttonDiv" id="buttonDiv"></div> 
         <button class="metameskLogin"><img id='img-login' src="img/metamask.png" alt=""> MetaMask</button>
       </div>
     </div>
 
     <script src="js/index.js"></script>
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="js/app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js"></script>
 
     <script>
       function login(){
@@ -34,10 +36,10 @@
           window.location.href = 'telaMenu.html'
         }
       }
+
       function handleCredentialResponse(response) {
-        
       }
-      
+
       window.onload = function () {
         google.accounts.id.initialize({
           client_id: "",
