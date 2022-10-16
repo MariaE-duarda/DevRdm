@@ -12,13 +12,15 @@
       <div>
         <img class="logo" src="img/RandomDev.png" alt="Logo"> <br>
         <hr>
-        <span> <b>Bem vindo(a)</b> de volta!</span> <br>
-        <input type="text" id="email" placeholder="E-mail" required> <br>
+        <span id="devolta"> <b>Bem vindo(a)</b> de volta!</span> <br>
+        <input type="text" placeholder="Usuário" id="usuário" required>
+        <input type="email" id="email" placeholder="E-mail" required> <br>
         <input type="password" id="senha" placeholder="Senha" required> <br>
-        <button id="login" onclick="login()">LogIn</button> <br>
+        <button id="login" onclick="login()"><label id="textCadastro">Cadastrar</label> <label id="textLogin">LogIn</label></button> <br>
         <label>OU</label> <br>
+        <button class="metameskLogin"><img id='img-login' src="img/metamask.png" alt="">MetaMask</button> <br> <br> <br> <br>
+        <label id="semConta" style="font-size: 14px; display: inline-block;">Sem conta? </label><label style="display: none;" id="temConta">Possui conta?</label> <button class="buttonCadastro" onclick="telaCadastro()"><label style="display: block;" id="btnCadastro"> <b>Cadastre-se</b></label> <label style="display: none;" id="btnLogin"><b>LogIn</b></label></button>
         <div class="buttonDiv" id="buttonDiv"></div> 
-        <button class="metameskLogin"><img id='img-login' src="img/metamask.png" alt="">MetaMask</button>
       </div>
     </div>
 

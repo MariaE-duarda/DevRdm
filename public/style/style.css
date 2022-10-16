@@ -51,9 +51,54 @@ hr{
     margin-left: auto;
     margin-right: auto;
 }
-
+.metameskLogin{
+    margin-bottom: -130px;
+}
 #email{
     margin-top: 20px;
+}
+
+#semConta, #temConta{
+    margin-top: -30px;
+}
+
+#temConta{
+    font-size: 14px;
+}
+
+#devolta{
+    display: block;
+}
+
+#usuário{
+    display: none;
+    margin-left: 10%;
+    margin-top: 0px;
+    margin-bottom: -12px;
+}
+
+.buttonCadastro{
+    border: none;
+    background: none;
+    width: 100px;
+    margin-top: -40px;
+}
+
+.buttonCadastro:hover{
+    letter-spacing: 0.5px;
+}
+
+#textCadastro{
+    display: none;
+}
+
+#textLogin{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 .square{

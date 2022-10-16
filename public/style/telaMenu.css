@@ -363,6 +363,10 @@ div.buttons{
     }
 }
 
+label{
+  margin-top: 25px;
+}
+
 @media(max-width: 440px){
   .normal{
     margin-left: 15%;
