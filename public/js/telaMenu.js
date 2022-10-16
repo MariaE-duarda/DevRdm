@@ -93,6 +93,6 @@ function trocarCor(){
     document.getElementById('body').style.background = '';
     document.getElementById('normal').style.background = '';
     document.getElementById('menuInfos').style.background = '#2512449c';
-    document.getElementById('colorInfor').style.background = 'blueviolet';
+    document.getElementById('colorInfor').style.color = 'blueviolet';
   }
 }
