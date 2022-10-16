@@ -138,8 +138,13 @@ body{
   margin-top: 15px;
 }
 
+#colorInfor{
+  color: blueviolet;
+}
+
 #menuInfos{
   display: none;
+  background-color: #2512449c;
 }
 
 hr{

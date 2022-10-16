@@ -78,6 +78,8 @@ function trocarCor(){
     document.getElementById('trocarCor').style.background = '#173a75';
     document.getElementById('body').style.background = 'linear-gradient(-45deg, #173a75, rgb(70, 100, 145), #284d8d, #3079b4)';
     document.getElementById('normal').style.background = '#173a75';
+    document.getElementById('menuInfos').style.background = '#173a759c';
+    document.getElementById('colorInfor').style.color = '#4fa2e6';
     
   } else{
     trokColor = 0
@@ -90,5 +92,7 @@ function trocarCor(){
     document.getElementById('menu').style.backgroundColor = '#33195c';
     document.getElementById('body').style.background = '';
     document.getElementById('normal').style.background = '';
+    document.getElementById('menuInfos').style.background = '#2512449c';
+    document.getElementById('colorInfor').style.background = 'blueviolet';
   }
 }
