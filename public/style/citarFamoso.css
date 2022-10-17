@@ -1,6 +1,6 @@
 body{
     height: 80vh;
-    background: linear-gradient(-45deg, #a938a3, #734691, #d43faf, #6e30b4);
+    background: linear-gradient(-45deg, #8f38a9, #5d4691, #553fd4, #3079b4);
     background-size: 400% 400%;
     align-items: center;
     animation: backgroundTransition 6s ease-out infinite;
@@ -85,7 +85,7 @@ button{
     color: white;
     letter-spacing: 2px;
     box-shadow: 3px 0px 5px 5px rgba(0, 0, 0, 0.336);
-    background: linear-gradient(-45deg, #a938a3 0%, #8f57b4 100%);
+    background: linear-gradient(-45deg, #8f38a9 0%, #3079b4 100%);
     margin-left: 42%;
 }
 
