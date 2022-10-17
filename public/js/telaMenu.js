@@ -74,6 +74,7 @@ function trocarCor(){
     document.querySelector('#button-option3').style.backgroundColor = '#173a75';
     document.querySelector('#button-option4').style.backgroundColor = '#173a75';
     document.querySelector('#button-option5').style.backgroundColor = '#173a75';
+    document.querySelector('#button-option6').style.backgroundColor = '#173a75';
     document.getElementById('trocarCor').style.background = '#173a75';
     document.getElementById('body').style.background = 'linear-gradient(-45deg, #173a75, rgb(70, 100, 145), #284d8d, #3079b4)';
     document.getElementById('normal').style.background = '#173a75';
@@ -88,6 +89,7 @@ function trocarCor(){
     document.querySelector('#button-option3').style.backgroundColor = '#33195cbd';
     document.querySelector('#button-option4').style.backgroundColor = '#33195cbd';
     document.querySelector('#button-option5').style.backgroundColor = '#33195cbd';
+    document.querySelector('#button-option6').style.backgroundColor = '#33195cbd';
     document.getElementById('trocarCor').style.background = '';
     document.getElementById('menu').style.backgroundColor = '#33195c';
     document.getElementById('body').style.background = '';
@@ -95,5 +97,6 @@ function trocarCor(){
     document.getElementById('menuInfos').style.background = '#2512449c';
     document.getElementById('colorInfor').style.color = 'blueviolet';
     document.getElementById('center').style.backgroundColor = '#9268d6ea';
+
   }
 }
