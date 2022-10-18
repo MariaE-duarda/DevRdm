@@ -105,6 +105,19 @@ body{
   animation: drop 1.5s ease;
 }
 
+.center2{
+  position: fixed;
+  height: 270px;
+  width: 450px;
+  background-color: #9268d6ea;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 180px;
+  color: white;
+  pointer-events: auto;
+  animation: drop 1.5s ease;
+}
+
 .img-trocarCor:hover{
   transform: rotate(45deg);
 }
@@ -155,10 +168,15 @@ body{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
+.img-QrCode{
+  height: 150px;
+  border-radius: 20px;
+}
+
 .menu{
   background-color: #2512449c;
   width: 310px;
-  height: 135px;
+  height: 145px;
   margin-left: 68.5%;
   border-radius: 5px;
   margin-top: 15px;
@@ -192,7 +210,7 @@ li, span{
 }
 
 .marTop{
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .marBot{
@@ -358,6 +376,10 @@ div.buttons{
   .center{
     width: 80%;
     height: 170px;
+  }
+  .center2{
+    width: 80%;
+    height: 300px;
   }
   .modal{
     margin-left: 10%;

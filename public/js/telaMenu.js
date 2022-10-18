@@ -60,8 +60,17 @@ function infoFunction(){
   document.getElementById('modal').style.display = 'block'
 }
 
+function infoShare(){
+  document.getElementById('menuInfos').style.display = 'none';
+  document.getElementById('modal2').
+}
+
 function closeModal(){
   document.getElementById('modal').style.display = 'none';
+}
+
+function closeModal2(){
+  document.getElementById('modal2').style.display = 'none';
 }
 
 trokColor = 0
