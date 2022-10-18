@@ -90,6 +90,8 @@ function trocarCor(){
     document.getElementById('menuInfos').style.background = '#173a759c';
     document.getElementById('colorInfor').style.color = '#4fa2e6';
     document.getElementById('center').style.backgroundColor = '#2f62b9ec';
+    document.getElementById('center2').style.backgroundColor = '#2f62b9ec';
+
     
   } else{
     trokColor = 0
@@ -106,6 +108,6 @@ function trocarCor(){
     document.getElementById('menuInfos').style.background = '#2512449c';
     document.getElementById('colorInfor').style.color = 'blueviolet';
     document.getElementById('center').style.backgroundColor = '#9268d6ea';
-
+    document.getElementById('center2').style.backgroundColor = '';
   }
 }
