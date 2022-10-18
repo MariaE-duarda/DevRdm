@@ -103,7 +103,7 @@ header .header__mode button i {
 .search__user {
     background-color: #3237466c;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.336);
-
+    background: linear-gradient(-45deg, #8f38a991 0%, #3079b486 100%);
     border-radius: 8px;
     padding: 14px;
     display: flex;
@@ -125,6 +125,9 @@ header .header__mode button i {
 
 .search__user button {
     background-color: rgb(14, 14, 14);
+    background: linear-gradient(-45deg, #8f38a991 0%, #3079b486 100%);
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.336), 5px 5px 5px rgba(0, 0, 0, 0.336);
+
     color: #FFFF;
     font-size: 0.9rem;
     border-radius: 4px;
@@ -134,10 +137,21 @@ header .header__mode button i {
     font-family: 'Rubik', sans-serif;
 }
 
+.search__user button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.search__user button:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 section .container__user {
     padding: 14px;
     background-color: #3237466c;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.336);
+    background: linear-gradient(-45deg, #8f38a991 0%, #3079b486 100%);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
