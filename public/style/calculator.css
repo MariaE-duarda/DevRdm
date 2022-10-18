@@ -20,6 +20,7 @@ body{
     background-size: 400% 400%;
     align-items: center;
     animation: backgroundTransition 6s ease-out infinite;
+    font-family: 'Poppins';
 }
 
 @keyframes backgroundTransition {
@@ -68,13 +69,14 @@ body{
     height: 75vh;
 	text-align: center;
     animation: drop 1.5s ease;
-    border: 1px solid #9403f4;
     border-top: 0px;
     margin: 50px auto;
     font-size: 30px;
     border-spacing: 0rem; 
     margin-top: 100px;
+    background-color:black;
 }
+
 
 td {
     width: 25%;  
@@ -83,11 +85,16 @@ td {
     font-size: smaller;
     cursor: pointer;
     border-spacing: 0px;
+    border-radius: 5px;
+}
+
+.number, .operator{
+    color: white;
 }
 
 .number:hover  {
     background: #9403f4;
-    color: #050801;
+    color: black;
     box-shadow: 0 0 5px #7c03cc, 
                 0 0 25px #7c03cc,
                 0 0 50px #7c03cc,
@@ -95,7 +102,7 @@ td {
 }
 
 .operator:hover {
-    color:#255784;
+    color: black;
     background: #2196f3;
     box-shadow: 0 0 10px #1c67a5, 0 0 40px #1c67a5, 0 0 80px #1c67a5;
 }

@@ -34,6 +34,23 @@ body{
 
 .list-img{
   cursor: pointer;
+  transition: 1s;
+}
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-60px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+
+.list-img:hover{
+  transform: rotate(180deg);
 }
 
 .title{
@@ -85,6 +102,11 @@ body{
   margin-top: 180px;
   color: white;
   pointer-events: auto;
+  animation: drop 1.5s ease;
+}
+
+.img-trocarCor:hover{
+  transform: rotate(45deg);
 }
 
 .forTrocarCor{
@@ -103,6 +125,9 @@ body{
   margin-top: -20px;
 }
 
+.normal:hover{
+  letter-spacing: 0.5px;
+}
 .div-img-trocarCor{
   margin-top: -10px;
   margin-right: 45px;
@@ -113,6 +138,7 @@ body{
   height: 40px;
   width: 40px;
   cursor: pointer;
+  transition: .9s;
 }
 
 #modal{
@@ -198,6 +224,7 @@ li:hover{
   border: none;
   color: white;
   cursor: pointer;
+  transition: .5s;
 }
 
 .normal:hover{

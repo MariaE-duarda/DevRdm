@@ -62,9 +62,44 @@ hr{
     margin-top: 20px;
 }
 
+#searchbtn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#searchbtn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#searchbtn{
+    transition: .4s;
+    outline:none;
+}
+
+#searchbtn::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    top: var(--mouse-y);
+    left: var(--mouse-x);
+    transform-style: flat;
+    transform: translate3d(-50%,-50%,0);
+    background: rgba(white,.1);
+    border-radius: 100%;
+    transition: width .3s ease, height .3s ease;
+}
+
 .heart{
     margin-top: -50px;
     margin-left: 22%;
+}
+
+.coracao:hover{
+    width: 36px;
 }
 
 .subtext{
@@ -73,6 +108,9 @@ hr{
 
 .coracao{
     width: 35px;
+    transition: .4s;
+    cursor: pointer;
+
 }
 
 button{
