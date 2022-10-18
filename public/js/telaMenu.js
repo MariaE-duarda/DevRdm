@@ -62,7 +62,7 @@ function infoFunction(){
 
 function infoShare(){
   document.getElementById('menuInfos').style.display = 'none';
-  document.getElementById('modal2').
+  document.getElementById('modal2').style.display = 'block';
 }
 
 function closeModal(){
