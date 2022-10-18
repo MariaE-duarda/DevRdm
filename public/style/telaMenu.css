@@ -88,10 +88,18 @@ body{
   margin-left: 45px;
 }
 
+.cancelar2{
+  cursor: pointer;
+}
+
 .modal{
   margin-left: 30%;
 }
 
+#modal2{
+  margin-left: 32%;
+  margin-right: 50%;
+}
 .center{
   position: fixed;
   height: 200px;
@@ -302,6 +310,9 @@ div.buttons{
   .modal{
     margin-left: 25%;
   }
+  #modal2{
+    margin-left: 25%;
+  }
 }
 
 @media(max-width: 870px){
@@ -313,6 +324,9 @@ div.buttons{
   }
   .modal{
     margin-left: 16%;
+  }
+  #modal2{
+    margin-left: 19%;
   }
 }
 
@@ -334,6 +348,9 @@ div.buttons{
   .modal{
     margin-left: 15%;
   }
+  #modal2{
+    margin-left: 19%;
+  }
 }
 
 @media(max-width: 690px){
@@ -350,6 +367,9 @@ div.buttons{
   .modal{
     margin-left: 9%;
   }
+  #modal2{
+    margin-left: 16%;
+  }
 }
 
 @media(max-width: 570px){
@@ -362,12 +382,18 @@ div.buttons{
   .modal{
     margin-left: 2%;
   }
+  #modal2{
+    margin-left: 7%;
+  }
 }
 
 @media(max-width: 600px){
   .button-option{
     width: 70%;
     margin-left: 15%;
+  }
+  #modal2{
+    margin-left: 10%;
   }
 
 }
