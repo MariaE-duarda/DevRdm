@@ -94,6 +94,6 @@ img {
 
 @media(max-width: 500px){
     h1{
-        margin-top: 40px;
+        margin-top: 0px;
     }
 }
