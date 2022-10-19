@@ -10,7 +10,7 @@
 }
 body{
     transition: background-color .3s ease-in-out, color .3s ease-in-out;
-    background: linear-gradient(90deg, #5e35aa, #50289b, #50289b, #9638a9, #7c4ea7);
+    background: linear-gradient(90deg, #8f38a9, #5d4691, #613aa0, #3079b4);
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -70,10 +70,21 @@ div.box button{
     padding: 10px 15px;
     border: 0;
     border-radius: 5px;
-    background-color: #33195c;
+    background: linear-gradient(-45deg, #8f38a9 0%, #3079b4 100%);
+    font-weight: 500;
     color: white;
     cursor: pointer;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media(max-width: 650px){
