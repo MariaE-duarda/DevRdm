@@ -1,9 +1,9 @@
 body{
     height: 80vh;
-    background: linear-gradient(-45deg, #8f38a9, #5d4691, #553fd4, #3079b4);
+    background: linear-gradient(90deg, #8f38a9, #5d4691, #613aa0, #3079b4);
     background-size: 400% 400%;
     align-items: center;
-    animation: backgroundTransition 6s ease-out infinite;
+    animation: backgroundTransition 7s ease-out infinite;
 }
 
 @keyframes backgroundTransition {

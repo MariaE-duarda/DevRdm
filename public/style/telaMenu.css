@@ -6,10 +6,10 @@
 }
 body{
     height: 130vh;
-    background: linear-gradient(-45deg, #8f38a9, #5d4691, #553fd4, #3079b4);
+    background: linear-gradient(90deg, #5e35aa, #50289b, #50289b, #9638a9, #7c4ea7);
     background-size: 400% 400%;
     align-items: center;
-    animation: backgroundTransition 10s ease-out infinite;
+    animation: backgroundTransition 7s ease-out infinite;
     margin-left: auto;
     margin-right: auto;
 }

@@ -16,10 +16,10 @@
 
 body{
     height: 80vh;
-    background: linear-gradient(-45deg, #8f38a9, #5d4691, #553fd4, #3079b4);
+    background: linear-gradient(90deg, #8f38a9, #5d4691, #613aa0, #3079b4);
     background-size: 400% 400%;
     align-items: center;
-    animation: backgroundTransition 6s ease-out infinite;
+    animation: backgroundTransition 7s ease-out infinite;
     font-family: 'Poppins';
 }
 
@@ -74,13 +74,13 @@ body{
     font-size: 30px;
     border-spacing: 0rem; 
     margin-top: 100px;
-    background-color:black;
+    background-color: transparent;
 }
 
 
 td {
     width: 25%;  
-    border: 1px solid #9403f4;
+    border: 1px solid black;
     padding: 15px;
     font-size: smaller;
     cursor: pointer;
@@ -120,14 +120,16 @@ td {
 .temporary-result {
     width: 100%;
     text-align: end;
-    color:#9403f4;
+    color: white;
     padding-right: 47px;
     padding-top: 5px;
     font-size: 20px;
     overflow: hidden;
-    border-top: 2px solid #9403f4;
-    border-left:  1px solid #9403f4;
-    border-right: 1px solid #9403f4;
+    border-top: 2px solid black;
+    border-left:  1px solid black;
+    border-right: 1px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     font-weight: normal;
 }
 
@@ -141,7 +143,7 @@ td {
     font-size: larger;
     overflow: hidden;
     cursor: unset;
-    border: 1px solid #9403f4;
+    border: 1px solid black;
     border-top:none;
 }
 

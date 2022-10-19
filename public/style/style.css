@@ -10,14 +10,18 @@
 body{
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(-45deg, #8f38a9, #5d4691, #553fd4, #3079b4);
+    background: linear-gradient(90deg, #5e35aa, #50289b, #9638a9 70%, #7c4ea7);
     background-size: 400% 400%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: backgroundTransition 4s ease-out infinite;
+    animation: backgroundTransition 7s ease-out infinite;
     position: relative;
+}
+
+b{
+    cursor: pointer;
 }
 
 @keyframes backgroundTransition {

@@ -10,13 +10,13 @@
 body{
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(-45deg, #8f38a9, #5d4691, #553fd4, #3053b4);
+  background: linear-gradient(90deg, #8f38a9, #5d4691, #613aa0, #3079b4);
   background-size: 400% 400%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: backgroundTransition 4s ease-out infinite;
+  animation: backgroundTransition 7s ease-out infinite;
   position: relative;
 }
 
