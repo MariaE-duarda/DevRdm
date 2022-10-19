@@ -10,7 +10,7 @@
 }
 body{
     transition: background-color .3s ease-in-out, color .3s ease-in-out;
-    background: linear-gradient(90deg, #8f38a9, #5d4691, #613aa0, #3079b4);
+    background: linear-gradient(90deg, #5e35aa, #50289b, #50289b, #9638a9, #7c4ea7);
     width: 100%;
     min-height: 100vh;
     display: grid;
