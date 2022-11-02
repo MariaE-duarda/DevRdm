@@ -23,6 +23,7 @@ body{
     position: relative;
     background-size: 400% 400%;
 }
+
 @keyframes backgroundTransition {
     0% {
         background-position:  0% 80%;
@@ -41,8 +42,8 @@ body{
     left: 0;
     width: 100%;
     height: 65px;
-    background-color: #33195c;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 }
 
 .logo{

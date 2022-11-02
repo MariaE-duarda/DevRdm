@@ -12,6 +12,7 @@ body{
     animation: backgroundTransition 7s ease-out infinite;
     margin-left: auto;
     margin-right: auto;
+    transition: .5s;
 }
 
 @keyframes backgroundTransition {
@@ -93,7 +94,7 @@ body{
 }
 
 .modal{
-  margin-left: 30%;
+  margin-left: 33%;
 }
 
 #modal2{
@@ -175,6 +176,7 @@ body{
     height: 65px;
     background-color: #33195c;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: .4s;
 }
 
 .img-QrCode{
@@ -279,9 +281,14 @@ img{
   cursor: pointer;
   background-color: #33195cbd;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.336);
+  border-radius: 7px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 50px;
   transition: .4s;
+}
+
+.button-option:hover{
+  letter-spacing: 1px;
 }
 
 .button-option2{
@@ -297,8 +304,19 @@ div.buttons{
   margin-right: auto;
 }
 
+.h3{
+  margin-top: 10px;
+}
+
 .img-button{
-  height: 60px;
+  height: 50px;
+  transition: .5s;
+}
+
+@media(max-width: 1230px){
+  .modal{
+    margin-left: 28%;
+  }
 }
 
 @media(max-width: 1000px){
@@ -410,10 +428,13 @@ div.buttons{
   }
   .center2{
     width: 80%;
-    height: 300px;
+    height: 270px;
   }
   .modal{
     margin-left: 10%;
+  }
+  .h3{
+    margin-top: 5px;
   }
 }
 
