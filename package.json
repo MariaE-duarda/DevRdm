@@ -1,5 +1,24 @@
 {
   "dependencies": {
+    "express": "^4.18.2",
     "firebase": "^9.12.1"
-  }
+  },
+  "name": "random-filmes",
+  "description": "<hr> \r É um projeto desenvolvido para a disciplina de desenvolvimento web. É uma aplicação randomica, não tem um objetivo em específico. O foco, no meu caso, é estudar mais a fundo a parte do front-end.",
+  "version": "1.0.0",
+  "main": "./public/backend/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariaE-duarda/random-dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariaE-duarda/random-dev/issues"
+  },
+  "homepage": "https://github.com/MariaE-duarda/random-dev#readme"
 }
