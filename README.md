@@ -21,7 +21,7 @@
 <br><br>
 
 <div align="center">
-  <img height="500" src="https://github.com/MariaE-duarda/DevRdm/blob/main/public/img/randomDevScreen.png?raw=true" />
+  <img src="https://github.com/MariaE-duarda/DevRdm/blob/main/public/img/randomDevScreen.png?raw=true" />
 </div>
 
 <p align="center">done with 💖 per:</p>
