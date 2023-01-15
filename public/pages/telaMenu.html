@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random opções</title>
+    <link rel="stylesheet" href="../style/telaMenu.css">
+    <link rel="shortcut icon" href="img/shuffle.png" type="image/x-icon">
+</head>
+<body id="body" onclick="">
+    <header>
+        <div id="menu">
+            <img class="list-img" src="../img/list.png" alt="">
+            <img class="image" src="../img/RandomDev.png" alt="">
+            <button onclick="openOptions()" id="normal" class="normal">Informações</button>
+            <div class="menu" id="menuInfos">
+                <ul>
+                    <li class="marBot"><a href="#">Autores</a></li>
+                    <li class="marTop"><a onclick="infoFunction()" href="#">Função do site</a></li>
+                    <li class="compartilhar"><a href="#" onclick="infoShare()">Compartilhar o site</a></li>
+                    <hr>
+                    <span id="colorInfor" style="color: blueviolet;">Site criado com <3 por Eduarda </span>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="modal2" id="modal2">
+        <div id="center2" class="center2" style="background-color: #9268d6ea;">
+            <h3 class="h3">Compartilhe com amigos: <img class="cancelar2" onclick="closeModal2()" src="../img/cancelar.png" alt=""></h3> 
+            <img class="img-QrCode" src="../img/qrcode - site.png" alt="">
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div id="center" class="center" style="background-color: #9268d6ea;">
+            <div class="titleModal">
+                <h3>Função do site:<img class="cancelar" onclick="closeModal()" src="../img/cancelar.png" alt=""></h3> 
+            </div>
+            <div class="spanModal">
+                <span>Este site é um projeto da matéria de desenvolvimento de aplicações web. <br> Tendo como foco o front-end.</span>
+            </div>
+        </div>
+    </div>
+    <h1 class="title" id="title">Random Opções</h1>
+    <div class="forTrocarCor">
+        <button class="trocarCor" id="trocarCor">
+        <div class="div-img-trocarCor">
+            <img class="img-trocarCor" src="../img/sol.png" onclick="trocarCor()" alt=""></button>
+        </div>
+    </div>
+    <div class="buttons">
+       <a href="citarFamoso.html"><button id="button-option1" class="randomCitacao button-option"><img class="img-button" src="../img/Citações.png" alt=""><br> Citações</button></a> 
+       <a href="github.html"><button id="button-option3" class="gitHub button-option"><img src="../img/GitHub.png" class="img-button" alt=""><br>Perfil GitHub</button></a>
+       <a href="tradutorVoz.html"><button id="button-option2" class="tradutor button-option"><img src="../img/Tradutor.png" class="img-button" alt=""><br>Tradutor de voz</button></a>
+    </div>
+    <div class="buttons">
+        <a href="qrcode.html"><button id="button-option4" class="qrcode button-option button-option2"><img src="../img/Qr-Code.png" class="img-button" alt=""><br> Criar QRcode</button></a>
+        <a href="sorteioNúmero.html"><button id="button-option5" class="randomNumero button-option button-option2"><img src="../img/Números.png" alt="" class="img-button"><br>Sortear Número</button></a>
+        <a href="calculadora.html"><button id="button-option6" class="calculator button-option button-option2"><img src="../img/calculadora.png" alt="" class="img-button"><br>Calculadora</button></a>
+    </div>
+
+    <script src="../js/telaMenu.js"></script>
+</body>
+</html>

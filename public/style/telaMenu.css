@@ -60,8 +60,8 @@ body{
     font-size: 70px;
     white-space: nowrap;
     overflow: hidden;
-    animation: typewriter 5s steps(13) infinite ,
-      blink 1000ms steps(13) infinite normal;
+    animation: typewriter 5s steps(13),
+      blink 800ms steps(13) infinite;
     border-right: 5px solid white;
   }
 
