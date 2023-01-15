@@ -43,6 +43,10 @@ server.get('/register', (req, res) => {
     res.sendFile(path.join(__dirname + '/pages/register.html'))
 })
 
+server.get('/telaMenu', (req, res) => {
+    res.sendFile(path.join(__dirname +'/pages/telaMenu.html'))
+})
+
 server.listen(3000, ()=> {
     console.log('Servidor esta ok!')
 })

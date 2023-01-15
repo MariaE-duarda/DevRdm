@@ -10,7 +10,8 @@
   "description": "É um projeto desenvolvido para a disciplina de desenvolvimento web. É uma aplicação randomica, não tem um objetivo em específico. O foco, no meu caso, é estudar mais a fundo o front-end.",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon start"
   },
   "repository": {
     "type": "git",
