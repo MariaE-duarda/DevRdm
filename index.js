@@ -1,34 +1,46 @@
 const express = require('express');
 const server = express();
-const filmes = require('./backend/src/data/filmes.json');
-const path = require('path')
+const path = require('path');
 
-server.get('/filmes', (req, res) =>{
-    return res.json(filmes)
+(async() => {
+    const database = require('./db');
+    const Perfil = require('./models/profile');
+
+    try{
+        const result = await database.sync();
+        console.log(result);
+
+        const resultCreate = await Perfil.create({
+            username: 'eduarda',
+            email: 'eduardafreire115@gmail.com',
+            password: '1234pass',
+            numberPhone: '98989898',
+            login: 'eduarda',
+        })
+
+        const resultCreateTwo = await Perfil.create({
+            username: 'maria',
+            email: 'eduardafreire115@gmail.com',
+            password: '123',
+            numberPhone: '97979797',
+            login: 'maria',
+        })
+
+        console.log(resultCreate);
+        console.log(resultCreateTwo)
+
+    } catch(error){
+        console.log(error)
+    }
+
+})();
+
+server.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname + '/index.html'))
 })
 
-server.get('/tela', (req, res) => {
-    res.sendFile(path.join(__dirname + '/sorteioNúmero.html'))
-})
-
-server.get('/tela', (req, res) => {
-    res.sendFile(path.join(__dirname + '/calculadora.html'))
-})
-
-server.get('/tela', (req, res) => {
-    res.sendFile(path.join(__dirname + '/citarFamoso.html'))
-})
-
-server.get('/tela', (req, res) => {
-    res.sendFile(path.join(__dirname + '/qrcode.html'))
-})
-
-server.get('/tela', (req, res) => {
-    res.sendFile(path.join(__dirname + '/tradutorVoz.html'))
-})
-
-server.get('/tela', (req, res) => {
-    res.sendFile(path.join(__dirname + '/github.html'))
+server.get('/register', (req, res) => {
+    res.sendFile(path.join(__dirname + '/pages/register.html'))
 })
 
 server.listen(3000, ()=> {
