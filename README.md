@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="80" src="https://github.com/MariaE-duarda/DevRdm/blob/main/public/img/RandomDev.png?raw=true">
+  <img height="80" src="https://raw.githubusercontent.com/MariaE-duarda/DevRdm/main/img/RandomDev.png'>
 </div>
 
 <div align = "center">
