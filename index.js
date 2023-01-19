@@ -1,6 +1,16 @@
 const express = require('express');
 const server = express();
 const path = require('path');
+const bodyParser = require('body-parser');
+const database = require('./db');
+const Perfil = require('./models/profile');
+
+// server.use(express.static(path.join(__dirname, 'public')));
+server.use(bodyParser.json());
+server.use(bodyParser.urlencoded({
+    extended: true, 
+}));
+
 
 (async() => {
     const database = require('./db');
