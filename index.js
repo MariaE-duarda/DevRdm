@@ -11,7 +11,6 @@ server.use(bodyParser.urlencoded({
     extended: true, 
 }));
 
-
 (async() => {
     const database = require('./db');
     const Perfil = require('./models/profile');
@@ -54,7 +53,7 @@ server.get('/register', (req, res) => {
 })
 
 server.get('/telaMenu', (req, res) => {
-    res.sendFile(path.join(__dirname +'/pages/telaMenu.html'))
+    res.sendFile(path.join(__dirname + '/pages/telaMenu.html'))
 })
 
 server.listen(3000, ()=> {
