@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Random Filmes</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="shortcut icon" href="img/shuffle.png" type="image/x-icon">
+    <link rel="stylesheet" href="./public/style/style.css">
+    <link rel="shortcut icon" href="./public/img/shuffle.png" type="image/x-icon">
   </head>
   <body>
     <div class="square">
       <div>
-        <img class="logo" src="img/RandomDev.png" alt="Logo"> <br>
+        <img class="logo" src="./public/img/RandomDev.png" alt="Logo"> <br>
         <hr>
         <span id="devolta"> <b>Bem vindo(a)</b> de volta!</span> <br>
         <form action="/logar" method="post">
@@ -20,14 +20,14 @@
         </form>
         <button id="login" onclick="login()"><label id="textCadastro">Cadastrar</label> <label id="textLogin">LogIn</label></button> <br>
         <label>OU</label> <br>
-        <button class="metameskLogin"><img id='img-login' src="img/metamask.png" alt="">MetaMask</button> <br> <br> <br> <br>
+        <button class="metameskLogin"><img id='img-login' src="./public/img/metamask.png" alt="">MetaMask</button> <br> <br> <br> <br>
         <label id="semConta" style="font-size: 14px; display: inline-block;">Sem conta? </label><label style="display: none;" id="temConta">Possui conta?</label> <button class="buttonCadastro" onclick="telaCadastro()"><label style="display: block;" id="btnCadastro"> <b>Cadastre-se</b></label> <label style="display: none;" id="btnLogin"><b>LogIn</b></label></button>
         <div class="buttonDiv" id="buttonDiv"></div> 
       </div>
     </div>
 
-    <script src="js/index.js"></script>
-    <script src="js/app.js"></script>
+    <script src="./public/js/index.js"></script>
+    <script src="./public/js/app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js"></script>
 
@@ -40,39 +40,8 @@
           alert('Informe o e-mail ou a senha corretamente!')
         } 
         else{
-          window.location.replace('./pages/telaMenu.html')
+          window.location.replace('./public/pages/telaMenu.html')
         }
-        
-        /*
-        firebase.auth().createUserWithEmailAndPassword(email, password).then(function(){
-                
-                const usuario = {
-                    'senha': password,
-                    'email': email,
-                }
-
-                firebase.firestore().collection('usuario').doc(firebase.auth().currentUser.uid).then(()=>{
-                    console.log('registrado')
-                    console.log(firebase.auth().currentUser.uid)
-                    window.location.href ='telaMenu.html';
-                });
-            }).catch((error) => {
-                swal('Não foi possível registrar usuário', getMessageError(error), 'error');
-            })
-
-        function getMessageError(error){
-          if(error.code == 'auth/user-not-found'){
-              return 'Usuário não encontrado!';
-          }else if(error.code == 'auth/invalid-email'){
-              return 'Email inválido!';
-          }else if(error.code == 'auth/wrong-password'){
-              return 'Senha inválida!';
-          }else{
-              return error.code;
-          }
-        }
-
-        */
       }
 
   </script>

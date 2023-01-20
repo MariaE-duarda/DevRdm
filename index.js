@@ -15,7 +15,7 @@ server.use(bodyParser.urlencoded({
 
 (async() => {
     const database = require('./db');
-    const Perfil = require('./models/profile');
+    const Perfil = require('/public/models/profile');
 
     try{
         const result = await database.sync();
@@ -62,8 +62,6 @@ server.post('/logar', async(req, res) => {
         res.sendFile(path.join(__dirname+'/index.html'))
     }
 })
-
-
 
 server.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/index.html'))

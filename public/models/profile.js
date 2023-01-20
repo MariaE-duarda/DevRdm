@@ -23,12 +23,7 @@ const Perfil = database.define('usuario', {
         type: Sequelize.STRING,
         allowNull: false,
     },
-
-    numberPhone: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
-
+    
     login: {
         type: Sequelize.STRING,
         allowNull: false
