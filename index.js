@@ -58,11 +58,11 @@ server.get('/', (req, res) => {
 })
 
 server.get('/register', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/pages/register.html'))
+    res.sendFile(path.join(__dirname + '/pages/register.html'))
 })
 
 server.get('/telaMenu', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/pages/telaMenu.html'))
+    res.sendFile(path.join(__dirname + '/pages/telaMenu.html'))
 })
 
 server.listen(3030, ()=> {
