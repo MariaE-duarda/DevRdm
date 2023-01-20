@@ -54,7 +54,7 @@ server.post('/logar', async(req, res) => {
 })
 
 server.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/pages/index.html'))
+    res.sendFile(path.join(__dirname + '/index.html'))
 })
 
 server.get('/register', (req, res) => {
