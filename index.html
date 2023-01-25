@@ -17,7 +17,7 @@
           <input style="padding-left: 10px;" type="email" name="email" id="email" placeholder="E-mail" required> <br>
           <input style="padding-left: 10px;" type="password" name="senha" id="senha" placeholder="Senha" required> <br>
         </form>
-        <button id="login" onclick="login()">Login</button> <br>
+        <button id="login">Login</button> <br>
         <label>OU</label> <br>
         <button class="metameskLogin"><img id='img-login' src="./public/img/metamask.png" alt="">MetaMask</button> <br> <br> <br> <br>
         <label id="semConta" style="font-size: 14px; display: inline-block;">Sem conta? </label><button class="buttonCadastro"><label id="btnCadastro"><b><a href="./public/pages/register.html">Cadastre-se</a></b></label></button>
@@ -30,24 +30,10 @@
     <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js"></script>
 
-    <script>
-      function login(){
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('senha').value;
+    <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-firestore-compat.js"></script>
 
-        if(email == '' || password == ''){
-          alert('Informe o e-mail ou a senha corretamente!')
-        } 
-        else{
-          window.location.replace('./public/pages/telaMenu.html')
-        }
-      }
-
-  </script>
-  <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-firestore-compat.js"></script>
-
-  <script src="../index.js"></script>
+    <script src="../index.js"></script>
   </body>
 </html>
