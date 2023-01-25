@@ -14,14 +14,13 @@
         <hr>
         <span id="devolta"> <b>Bem vindo(a)</b> de volta!</span> <br>
         <form method="post">
-          <input type="text" name="usuario" id="usuário" placeholder="Usuário" required >
-          <input type="email" name="email" id="email" placeholder="E-mail" required> <br>
-          <input type="password" name="senha" id="senha" placeholder="Senha" required> <br>
+          <input style="padding-left: 10px;" type="email" name="email" id="email" placeholder="E-mail" required> <br>
+          <input style="padding-left: 10px;" type="password" name="senha" id="senha" placeholder="Senha" required> <br>
         </form>
-        <button id="login" onclick="login()"><label id="textCadastro">Cadastrar</label> <label id="textLogin">LogIn</label></button> <br>
+        <button id="login" onclick="login()">Login</button> <br>
         <label>OU</label> <br>
         <button class="metameskLogin"><img id='img-login' src="./public/img/metamask.png" alt="">MetaMask</button> <br> <br> <br> <br>
-        <label id="semConta" style="font-size: 14px; display: inline-block;">Sem conta? </label><label style="display: none;" id="temConta">Possui conta?</label> <button class="buttonCadastro" onclick="telaCadastro()"><label style="display: block;" id="btnCadastro"> <b>Cadastre-se</b></label> <label style="display: none;" id="btnLogin"><b>LogIn</b></label></button>
+        <label id="semConta" style="font-size: 14px; display: inline-block;">Sem conta? </label><button class="buttonCadastro"><label id="btnCadastro"><b><a href="./public/pages/register.html">Cadastre-se</a></b></label></button>
         <div class="buttonDiv" id="buttonDiv"></div> 
       </div>
     </div>
