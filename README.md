@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="80" src="https://raw.githubusercontent.com/MariaE-duarda/DevRdm/main/img/RandomDev.png">
+  <img height="80" src="https://github.com/MariaE-duarda/DevRdm/blob/main/public/img/RandomDev.png?raw=true">
 </div>
 
 <div align = "center">
@@ -26,7 +26,7 @@
 <br><br>
 
 <div align="center">
-  <img src="https://github.com/MariaE-duarda/DevRdm/blob/main/img/randomDevScreen.png?raw=true" />
+  <img src="https://github.com/MariaE-duarda/DevRdm/blob/main/public/img/randomDevScreen.png?raw=true" />
 </div>
 
 <p align="center">done with 💖 per:</p>
