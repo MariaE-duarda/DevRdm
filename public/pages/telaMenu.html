@@ -13,7 +13,7 @@
   </head>
 </head> 
 <body id="body" onclick="">
-    <header>
+    <header style="margin-bottom: 0px;">
         <div id="menu">
             <img style="margin-top: 0px; margin-left: 8%;" class="image" src="../img/RandomDev.png" alt="">
             <button style="margin-top: 15px;" onclick="openOptions()" id="normal" class="normal">Informações</button>
@@ -44,7 +44,7 @@
             </div>
         </div>
     </div>
-    <h1 class="title" id="title">Random Opções</h1>
+    <h1 style="margin-top: 135px;" class="title" id="title">Random Opções</h1>
     <div class="forTrocarCor">
         <button class="trocarCor" id="trocarCor">
         <div class="div-img-trocarCor">
@@ -53,18 +53,24 @@
     </div>
     <div class="buttons">
        <a href="citarFamoso.html"><button id="button-option1" class="randomCitacao button-option"><img class="img-button" src="../img/Citações.png" alt=""><br> Citações</button></a> 
-       <a href="github.html"><button id="button-option3" class="gitHub button-option"><img src="../img/GitHub.png" class="img-button" alt=""><br>Perfil GitHub</button></a>
-       <a href="tradutorVoz.html"><button id="button-option2" class="tradutor button-option"><img src="../img/Tradutor.png" class="img-button" alt=""><br>Tradutor de voz</button></a>
+       <a href="taskList.html"><button id="button-option4" class="taskList button-option button-option2"><img src="../img/TaskList.png" class="img-button" alt=""><br>TaskList</button></a>
+       <a href="qrcode.html"><button id="button-option4" class="qrcode button-option button-option2"><img src="../img/Qr-Code.png" class="img-button" alt=""><br> Criar QRcode</button></a>
     </div>
     <div class="buttons">
-        <a href="qrcode.html"><button id="button-option4" class="qrcode button-option button-option2"><img src="../img/Qr-Code.png" class="img-button" alt=""><br> Criar QRcode</button></a>
+        <a href="tradutorVoz.html"><button id="button-option2" class="tradutor button-option button-option2"><img src="../img/Tradutor.png" class="img-button" alt=""><br>Tradutor de voz</button></a>
         <a href="sorteioNúmero.html"><button id="button-option5" class="randomNumero button-option button-option2"><img src="../img/Números.png" alt="" class="img-button"><br>Sortear Número</button></a>
         <a href="calculadora.html"><button id="button-option6" class="calculator button-option button-option2"><img src="../img/calculadora.png" alt="" class="img-button"><br>Calculadora</button></a>
     </div>
     <div class="buttons">
-        <a href="taskList.html"><button id="button-option4" class="taskList button-option button-option2"><img src="../img/TaskList.png" class="img-button" alt=""><br>TaskList</button></a>
+        <a href="github.html"><button id="button-option4" class="gitHub button-option button-option2"><img src="../img/GitHub.png" class="img-button" alt=""><br>Perfil GitHub</button></a>
     </div>
 
+    <div style="margin-top: 90px; text-align: center;" class="comments">
+        <label style="color: white; font-size: 30px; margin-bottom: 20px;">Comentários</label> <br>
+        <input id="assunto" style="width: 70%; border-radius: 5px; border: none; background-color: rgba(255, 255, 255, 0.438); height: 35px; padding-left: 10px;" type="text" class="assunto" placeholder="Assunto"> <br>
+        <textarea id="conteudo" style="width: 70%; border-radius: 5px; border: none; background-color: rgba(255, 255, 255, 0.404); margin-top: 10px; height: 150px; margin-bottom: 15px; padding-left: 10px;" type="text" class="content" placeholder="Mensagem"></textarea> <br>
+        <button id="enviar" class="button">Enviar</button>
+    </div>
     <script src="../js/telaMenu.js"></script>
 </body>
 </html>

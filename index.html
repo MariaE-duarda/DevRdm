@@ -59,12 +59,12 @@
           document.cookie = "logado=1";
           swal("Bom trabalho!", "Usuário Logado com sucesso.", "success");
         }).catch((error) => {
-          alert(error)
+          swal("Não foi possível logar", user.message, "error");
         })
       }).catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        alert(errorMessage)
+        swal("Não foi possível logar", "Usuário não encontrado", "error");
       })
       });
     </script>

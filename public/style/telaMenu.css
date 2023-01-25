@@ -114,6 +114,26 @@ body{
   animation: drop 1.5s ease;
 }
 
+.content::placeholder{
+  color: white;
+  font-weight: 400;
+}
+
+.assunto::placeholder{
+  color: white;
+  font-weight: 400;
+}
+
+.button{
+  width: 70%;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+
 .center2{
   position: fixed;
   height: 270px;

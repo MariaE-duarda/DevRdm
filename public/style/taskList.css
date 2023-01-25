@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+body{
+    height: 87vh;
+    background: linear-gradient(90deg, #5e35aa, #50289b, #50289b, #9638a9, #7c4ea7);
+    background-size: 400% 400%;
+    align-items: center;
+    animation: backgroundTransition 7s ease-out infinite;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+}
+
+@keyframes backgroundTransition {
+    0% {
+        background-position:  0% 80%;
+    }
+    50% {
+        background-position: 80% 100%;
+    }
+    100% {
+        background-position: 0% 90%;
+    }
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background-color: transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.logo{
+    width: 35px;
+    margin-top: 15px;
+    margin-left: 3%;
+}
+
+.section-todo-list{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-todo-list h2{
+    font-size: 42px;
+    margin: 20px;
+}
+
+li{
+    background-color: rgba(255, 255, 255, 0.404);
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+.input-btn{
+    display: flex;
+    margin-bottom: 10%;
+}
+.input-btn input{
+    width: 78%;
+    height: 34px;
+    border-radius: 5px;
+    border-color: linear-gradient(-45deg, #8f38a9 0%, #3079b4 100%);
+    font-size: 19px;
+    padding-left: 17px;
+    transition: .5s;
+}
+
+.input-btn input:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.input-btn input:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-btn button{
+    border: none;
+    border-radius: 5px;
+    height: 38px;
+    width: 30%;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 1px;
+    box-shadow: 3px 0px 5px 5px rgba(0, 0, 0, 0.336);
+    background: linear-gradient(-45deg, #8f38a9 0%, #3079b4 100%);
+    transition: .5s;
+}
+.input-btn button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.input-btn button:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-btn button:not(:hover){
+    transition: all 0.5s 0s ease;
+}
+.list-tasks{
+    margin-bottom: 11%;
+}
+.list-tasks ul{
+    padding-left: 0;
+    margin: 0 13px;
+}
+.list-tasks li{
+    font-size: 21px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.list-tasks li:first-letter{
+    color: #32e7ff;
+    text-transform: uppercase;
+}
+.list-tasks li span{
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 1px 8px; 
+    color: #fff;
+    cursor: pointer;
+    height: 30px;
+    transition: .5s;
+}
+.list-tasks li span:hover{
+    color: #7c4ea7;
+}
+
+/*remove all btn*/
+.remove-all{
+    border: none;
+    border-radius: 5px;
+    height: 38px;
+    width: 30%;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 1px;
+    box-shadow: 3px 0px 5px 5px rgba(0, 0, 0, 0.336);
+    background: linear-gradient(-45deg, #8f38a9 0%, #3079b4 100%);
+    transition: .5s;
+}
+
+.remove-all:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.remove-all:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*responsive*/
+@media only screen and (max-width: 768px){
+    .section-todo-list{
+        width: 90%;
+    }
+}
+
+@media(max-width: 650px){
+    .input-btn button{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .remove-all{
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+/* validation message */
+.error {
+    color: red;
+    text-align: left;
+    background-color: #ffe5e5;
+    padding: 2px 13px;
+    border: solid 2px red;
+    border-radius: 2px;
+}
+
+p.author {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    gap: 7px;
+}
+p.author a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+}

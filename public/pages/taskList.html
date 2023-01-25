@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/shuffle.png" type="image/x-icon">
+    <title>ToDo List - LocalStorage</title>
+    <link rel="stylesheet" href="../style/taskList.css">
+    <script src="../js/taskList.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <a href="telaMenu.html"><img class="logo" src="../img/voltar.png" alt=""></a>
+        </div>
+      </header>
+    <div class="section-todo-list">
+        <h2 style="margin-top: 100px; color: white;">Task List</h2>
+        <div class="input-btn">
+            <input type="text">
+            <button onclick="addTasks()">Add Task</button>
+        </div>
+        <div class="list-tasks">
+            <ul>
+                <!-- <li>name of task more content <span>X</span></li>
+                <li>name of task more content <span>X</span></li>
+                <li>name of task more content <span>X</span></li>
+                <li>name of task more content <span>X</span></li> -->
+            </ul>
+        </div>
+        <button class="remove-all" onclick="deleteAll()">Remover tudo</button>
+    </div>
+</body>
+</html>
