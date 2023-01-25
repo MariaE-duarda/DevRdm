@@ -158,7 +158,7 @@ label{
     cursor: pointer;
     border: none;
     color: white;
-    background-image: -webkit-linear-gradient(45deg, #102d71 0%, #000000 52%, #102d71 100%);
+    background-image: -webkit-linear-gradient(45deg, #102d719a 0%, #0000008e 52%, #102d7193 100%);
     background-position: 100%;
     background-size: 400%;
     -webkit-transition: background 300ms ease-in-out;
@@ -173,6 +173,26 @@ img#img-login{
 
 button:hover{
     background-position: 0;
+}
+
+.googleLogin{
+    background-color: rgba(255, 255, 255, 0.829);
+    margin-top: 10px;
+    font-weight: 500;
+    height: 40px;
+    width: 80%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.356);
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+    color: #5e35aa;
+    font-weight: 700;
+    font-size: 18px;
+    transition: .5s;
+}
+
+.googleLogin:hover{
+    background-color: white;
 }
 
 p{
