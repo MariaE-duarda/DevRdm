@@ -9,24 +9,68 @@
   </head>
   <body>
     <div class="square">
-      <div>
+      <div style="margin-top: 40px;">
         <img class="logo" src="../img/RandomDev.png" alt="Logo"> <br>
         <hr>
         <span id="devolta"> Veja bem-vindo ao <b>Random Dev</b></span> <br>
         <form method="post">
-          <input type="text" name="usuario" id="usuario" placeholder="Usuário" required >
-          <input style="margin-top: 7px;" type="email" name="email" id="email" placeholder="E-mail" required> <br>
-          <input type="password" name="senha" id="senha" placeholder="Senha" required> <br>
-        </form>
-        <button id="login">Cadastrar</button> <br>
+          <input style="padding-left: 10px;" type="text" name="usuario" id="usuario" placeholder="Usuário" required >
+          <input style="margin-top: 7px; padding-left: 10px;" type="email" name="email" id="email" placeholder="E-mail" required> <br>
+          <input style="padding-left: 10px;" type="password" name="senha" id="senha" placeholder="Senha" required> <br>
+        </form> 
+        <button style="margin-bottom: 10px;" class="button" id="cadastrar">Cadastrar</button> <br>
         <label>OU</label> <br>
-        <button class="metameskLogin"><img id='img-login' src="../img/metamask.png" alt="">MetaMask</button> <br> <br> <br>
+        <button class="metameskLogin button"><img id='img-login' src="../img/metamask.png" alt="">MetaMask</button> <br> <br> <br>
         <label id="temConta">Possui conta?</label> <button class="buttonCadastro"><label id="btnCadastro"><b> <a href="../../index.html">LogIn</a></b></label></button>
       </div>
     </div>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+      import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js";
+      import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js"
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyDHYmE_pmKw-_GAXuXPnKdueN--WSqnMKk",
+        authDomain: "randomweb-f5c10.firebaseapp.com",
+        projectId: "randomweb-f5c10",
+        storageBucket: "randomweb-f5c10.appspot.com",
+        messagingSenderId: "477753456234",
+        appId: "1:477753456234:web:e39a34af64f68507013c13"
+      };
+    
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth();
+      const database = getDatabase(app);
+
+      cadastrar.addEventListener('click', (e) => {
+
+      var username = document.getElementById('usuario').value;
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('senha').value;
+
+      createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+        const user = userCredential.user; 
+
+        set(ref(database, 'users/' + user.uid), {
+          username: username,
+          email: email, 
+          password: password
+        }).then(() => {
+          swal("Bom trabalho!", "Usuário criado com sucesso.", "success");
+        }).catch((error) => {
+          alert(error)
+        })
+      }).catch((error) => {
+        const errorCode = error.code; 
+        const errorMessage = error.message;
+        swal("Não foi possível criar usuário", errorMessage , "error");
+      });
+      });
+    </script>
+
     <script src="./public/js/index.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js"></script>
   </body>
 </html>

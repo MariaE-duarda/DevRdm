@@ -9,5 +9,4 @@ if(window.ethereum){
     })
 }
 else{
-    alert('Não possui a extensão Metamesk')
 }

@@ -7,7 +7,8 @@
     "nodemon": "^2.0.20",
     "sequelize": "^6.28.0",
     "sqlite": "^4.1.2",
-    "sqlite3": "^5.1.4"
+    "sqlite3": "^5.1.4",
+    "sweetalert": "^2.1.2"
   },
   "name": "random-filmes",
   "description": "É um projeto desenvolvido para a disciplina de desenvolvimento web. É uma aplicação randomica, não tem um objetivo em específico. O foco, no meu caso, é estudar mais a fundo o front-end.",

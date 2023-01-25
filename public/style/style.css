@@ -43,7 +43,6 @@ div{
 }
 
 .logo{
-    margin-top: -40px;
     width: 150px;
 }
 
@@ -148,7 +147,7 @@ label{
     color: white;
 }
 
-button{
+.button{
     margin-top: 10px;
     font-weight: 500;
     height: 40px;
@@ -160,7 +159,6 @@ button{
     border: none;
     color: white;
     background-image: -webkit-linear-gradient(45deg, #102d71 0%, #000000 52%, #102d71 100%);
-    background-image: linear-gradient(45deg, #862c73 0%, #000000 52%, #102d71 100%);
     background-position: 100%;
     background-size: 400%;
     -webkit-transition: background 300ms ease-in-out;
