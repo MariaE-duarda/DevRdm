@@ -8,7 +8,7 @@
 </div> 
 
 <div align="center">
- <a href="https://random-dev.vercel.app/"><img height="60" src="https://user-images.githubusercontent.com/92947069/162238723-d9323276-f218-4416-a91a-f7808204279d.png" /></a>
+ <a href="https://mariae-duarda.github.io/DevRdm/"><img height="60" src="https://user-images.githubusercontent.com/92947069/162238723-d9323276-f218-4416-a91a-f7808204279d.png" /></a>
 </div>
 
 <h3 align="center">☁️💜 Technologies 💜☁️</h3>
