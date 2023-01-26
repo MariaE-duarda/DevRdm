@@ -370,7 +370,9 @@ div.buttons{
 }
 
 @media(max-width: 730px){
-  
+  .title{
+    margin-bottom: 30px;
+  }
   .button-option{
     width: 50%;
     margin-left: 25%;
@@ -443,7 +445,6 @@ div.buttons{
   .title{
     font-size: 45px;
   }
-
 }
 
 @media(max-width: 530px){

@@ -4,7 +4,7 @@ body{
     margin-top: -50px;
     font-family: 'Poppins', sans-serif;
     transition: background-color .3s ease-in-out, color .3s ease-in-out;
-    height: 120vh;
+    height: 116vh;
     width: 90vw;
     background: linear-gradient(90deg, #8f38a9, #5d4691, #613aa0, #3079b4);
     background-size: 400% 400%;
